@@ -57,6 +57,11 @@
       {"trigger": "TRANSFER_VERTEX_TO_FRAGMENT","contents":"TRANSFER_VERTEX_TO_FRAGMENT($1)"},
       {"trigger": "LIGHT_ATTENUATION","contents":"LIGHT_ATTENUATION($1)"},
       {"trigger": "TRANSFORM_TEX","contents":"TRANSFORM_TEX(${1:coord},${2:tex})"},
+      {"trigger": "ParallaxOffset","contents":"ParallaxOffset(${1:half_h},${2:half_height},${3:half3_viewDir})"},
+      {"trigger": "WorldSpaceLightDir","contents":"WorldSpaceLightDir(${1:float4_v})"},
+      {"trigger": "ObjSpaceLightDir","contents":"ObjSpaceLightDir(${1:float4_v})"},
+      {"trigger": "ShadeVertexLights","contents":"ShadeVertexLights(${1:float4_vertex},${2:float3_normal})"},
+      {"trigger": "Shade4PointLights","contents":"Shade4PointLights(${1:float4_lightPosX},${2:float4_lightPosY},${3:float4_lightPosY},${4:float4_lightPosZ},${5:float3_lightColor0},${6:float3_lightColor1},${7:float3_lightColor2},${8:float3_lightColor3},${9:float4_lightAttenSq},${10:float3_pos},${11:float3_normal})"},
       {"trigger": "tex2D","contents":"tex2D(${1:tex},${2:uv})"},
       {"trigger": "UnpackNormal","contents":"UnpackNormal(${1:tex2D})"},
       {"trigger": "lighting_coords","contents":"LIGHTING_COORDS(${1:0},${2:0})"}
